@@ -33,25 +33,25 @@ Alle Requests können auf beliebige Art und Weise geschickt werden. Hauptsache -
 ### Rückgabe einer Liste aller enthaltenen Einträge
 
 Um das Resultat zu bekommen, soll ein GET-Request ohne Parameter an ```http://localhost:8080/api/devices``` gesendet werden.
-Als Response kommt ein JSON
+Als Response kommt ein JSON zurück
 
 ### Rückgabe eines einzelnen Eintrags, wenn man eine Gerätenummer übergibt
 
 Um das Resultat zu bekommen, soll ein GET-Request ohne Parameter an ```http://localhost:8080/api/devices/{id}``` gesendet werden, wo ```{id}``` die ID des benötigten Geräts
 ist.
-Als Response kommt ein JSON
+Als Response kommt ein JSON zurück
 
 ### Hinzufügen eines Eintrags
 
 Um das Resultat zu bekommen, soll ein POST-Request mit form-data in Body an ```http://localhost:8080/api/devices``` gesendet werden.
 form-data soll folgende Keys ```device_id, device_type, damage_possible``` sowie ihre Werte beinhalten.
-Als Response kommt ein JSON mit dem Status der Erfüllung des Requests.
+Als Response kommt ein JSON mit dem Status der Erfüllung des Requests zurück.
 
 ### Löschen eines Eintrags
 
 Um das Resultat zu bekommen, soll ein DELETE-Request mit form-data an ```http://localhost:8080/api/devices/{id}``` gesendet werden, wo ```{id}``` die ID des für die Löschung gewählten Geräts
 ist.
-Als Response kommt ein JSON mit dem Status der Erfüllung des Requests.
+Als Response kommt ein JSON mit dem Status der Erfüllung des Requests zurück.
 
 
 ### Bearbeiten eines Eintrags
@@ -59,4 +59,4 @@ Als Response kommt ein JSON mit dem Status der Erfüllung des Requests.
 Um das Resultat zu bekommen, soll ein PUT-Request mit x-www-form-urlencoded in Body an ```http://localhost:8080/api/devices/{id}``` gesendet werden, wo ```{id}``` die ID des für das Update gewählten Geräts
 ist.
 x-www-form-urlencoded soll folgende Keys ```device_type, damage_possible``` sowie ihre neuen Werte beinhalten.
-Als Response kommt ein JSON mit dem Status der Erfüllung des Requests.
+Als Response kommt ein JSON mit dem Status der Erfüllung des Requests zurück.
