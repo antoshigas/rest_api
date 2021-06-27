@@ -16,7 +16,7 @@ Selbstverständlich braucht man Docker dazu https://docs.docker.com/
 
 # Usage:
 
-Wenn der Installationsprozess erfolgreich abgeschlossen wurde, kann man in phpMyAdmin (die Zugangsdaten sind in ìnc/config.php) zur Datenbankverwaltung übergehen. 
+Wenn der Installationsprozess erfolgreich abgeschlossen wurde, kann man in phpMyAdmin (die Zugangsdaten sind in `inc/config.php`) zur Datenbankverwaltung übergehen. 
 Die Adresse dazu ist `http://localhost:8000/`
 
 ## Verwaltungsmethoden:
