@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 use App\Controller\Api\DeviceController;
 
-require 'vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . "/inc/config.php";
 
 echo (new DeviceController())->run();
