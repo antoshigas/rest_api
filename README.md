@@ -49,7 +49,7 @@ Als Response kommt ein JSON mit dem Status der Erfüllung des Requests.
 
 ### Löschen eines Eintrags
 
-Um das Resultat zu bekommen, soll ein DELETE-Request mit form-data an ```http://localhost:8080/api/devices/{id}``` gesendet werden, wo ```{id}``` die ID des für die Löschung gewählten Geräts
+Um das Resultat zu bekommen, soll ein DELETE-Request an ```http://localhost:8080/api/devices/{id}``` gesendet werden, wo ```{id}``` die ID des für die Löschung gewählten Geräts
 ist.
 Als Response kommt ein JSON mit dem Status der Erfüllung des Requests.
 

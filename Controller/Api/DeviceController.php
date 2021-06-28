@@ -56,7 +56,7 @@ class DeviceController extends BaseController
         $device_id = $this->requestParams['device_id'] ?? '';
         $device_type = $this->requestParams['device_type'] ?? '';
         $damage_possible = $this->requestParams['damage_possible'] ?? '';
-        if($device_id && $device_type && $damage_possible) {
+        if(strlen($device_id) && strlen($device_type) && strlen($damage_possible)) {
             if((new DeviceModel())->insertNewDevice([
                 'device_id' => (int) $device_id,
                 'device_type' => $device_type,
@@ -88,7 +88,7 @@ class DeviceController extends BaseController
         $device_type = $this->requestParams['device_type'] ?? '';
         $damage_possible = $this->requestParams['damage_possible'] ?? '';
 
-        if($device_type && $damage_possible){
+        if(strlen($device_type) && strlen($damage_possible)){
             if($deviceModel->updateOneDevice([
                 'device_type' => $device_type,
                 'damage_possible' => (int) $damage_possible,
